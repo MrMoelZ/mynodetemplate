@@ -20,7 +20,12 @@
 - `git remote add azure <url>`
 - `git push azure master`
 
-**CAREFUL: deleted files do not get deleted on deployment**
+**CAREFUL: (in repo) deleted files do not get deleted (from workingDir) on deployment**
+
+*further info:*
+*- a "build" command is executed*
+*- prestart command works*
+*- filepaths in start work*
 
 
 if `git push azure master` fails 
