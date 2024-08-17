@@ -20,6 +20,7 @@
 - `git remote add azure <url>`
 - `git push azure master`
 
+**CAREFUL: deleted files do not get deleted on deployment**
 
 
 if `git push azure master` fails 
