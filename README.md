@@ -4,7 +4,7 @@
 
 ### Good to know
 - PORT doesn't matter, it's set to 443 by the app engine(?)
-- npm start script not needed if there is an app.js or index.js (main doesn't need to be the "correct" file either)
+- needed: server.js, app.js, or package.json with a start script
 
 ### deploy from local git
 
