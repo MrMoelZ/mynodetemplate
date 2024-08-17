@@ -2,6 +2,9 @@
 
 ## Azure
 
+### Good to know
+- PORT doesn't matter, it's set to 443 by the app engine(?)
+
 ### deploy from local git
 
 #### Linux WebApp
@@ -17,12 +20,16 @@
 - `git push azure master`
 
 
+
 if `git push azure master` fails 
 - use `git push azure main:master`
 OR
 - change the deployment branch
 `az webapp config appsettings set --name <app-name> --resource-group <group-name> --settings DEPLOYMENT_BRANCH='main'` 
 `git push azure main`
+
+
+
 
 ### FTP Upload
 
