@@ -18,7 +18,7 @@ app.get('/', async (req, res) => {
 
 app.get('/:entity', async (req, res) => {
     const entity = req.params.entity;
-    res.send(`Hello ${entity}`);
+    res.send(`Greetings ${entity}`);
 })
 
 app.listen(PORT, () => {
