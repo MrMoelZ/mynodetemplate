@@ -20,7 +20,7 @@ app.get('/', async (req: Request, res: Response) => {
 })
 
 app.get('/html', async (req: Request, res: Response) => {
-    res.sendFile(`${__dirname}/public/index.html`);
+    res.sendFile(path.join(__dirname, '..', 'public', 'index.html'));
 })
 
 
