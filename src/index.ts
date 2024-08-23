@@ -1,4 +1,4 @@
-import express from 'express';
+import express, {Express, Request, Response} from 'express';
 import dotenv from 'dotenv';
 
 //
@@ -6,10 +6,6 @@ import path from 'path';
 import { fileURLToPath } from 'url';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
-
-
-// const dotenv = require("dotenv");
-// const express = require("express");
 
 dotenv.config();
 
@@ -19,9 +15,14 @@ app.use(express.static(`${__dirname}/public`));
 
 const PORT = process.env.PORT || 3003;
 
-app.get('/', async (req, res) => {
-    res.send('Hello Worldsssss');
+app.get('/', async (req: Request, res: Response) => {
+    res.send(`Hello World ${__filename} ${__dirname}`);
 })
+
+app.get('/html', async (req: Request, res: Response) => {
+    res.sendFile(`${__dirname}/public/index.html`);
+})
+
 
 app.get('/:entity', async (req, res) => {
     const entity = req.params.entity;
