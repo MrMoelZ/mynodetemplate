@@ -24,8 +24,8 @@
 
 *further info:*
 *- a "build" command is executed*
-*- prestart command works*
-*- filepaths in start work*
+*- "prestart" command works*
+*- filepaths in "start"-command work*
 
 
 if `git push azure master` fails 
