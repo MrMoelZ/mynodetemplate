@@ -6,13 +6,12 @@
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node dist/index.js",
-    "prestart": "npm run clean",
-    "build": "tsc",
-    "clean": "rimraf index.js src/index.js"
+    "start": "node src/index.js",
+    "build": "npm run clean && tsc",
+    "clean": "rimraf dist"
   },
   "keywords": [],
-  "author": "",
+  "author": "merlin.kegler@gmail.com",
   "license": "ISC",
   "dependencies": {
     "dotenv": "^16.4.5",

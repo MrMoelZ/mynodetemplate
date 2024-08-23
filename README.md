@@ -5,7 +5,8 @@
 ### Good to know
 - PORT doesn't matter, it's set to 443 by the app engine(?)
 - needed: server.js, app.js, or package.json with a start script
-- https://<appname>.scm.azurewebsites.net/wwwroot/ to see contents
+- LINUX: https://<appname>.scm.azurewebsites.net/wwwroot/ to see contents
+- WINDOWS: Development Tools > Console
 
 ### deploy from local git
 
@@ -35,6 +36,8 @@ OR
 - change the deployment branch
 `az webapp config appsettings set --name <app-name> --resource-group <group-name> --settings DEPLOYMENT_BRANCH='main'` 
 `git push azure main`
+
+#### Windows WebApp
 
 
 
